@@ -1,0 +1,2610 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20223.22.1005.1835                               -->
+<workbook original-version='18.1' source-build='2022.3.0 (20223.22.1005.1835)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='belib-points-de-recharge-clean' inline='true' name='federated.1w1o9ay0gpehpm1bzc09d0n51jr7' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='belib-points-de-recharge-clean' name='textscan.1mmxc5d1ntedfq1dej2po17e6sn2'>
+            <connection class='textscan' directory='C:/Users/ABR/Desktop/ProjetFinal' filename='belib-points-de-recharge-clean.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1mmxc5d1ntedfq1dej2po17e6sn2' name='belib-points-de-recharge-clean.csv' table='[belib-points-de-recharge-clean#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='fr_FR' separator=';'>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='Statut du Point de charge' ordinal='1' />
+            <column datatype='string' name='Arrondissement' ordinal='2' />
+            <column datatype='string' name='ID Station local' ordinal='3' />
+            <column datatype='string' name='ID Station itinérance' ordinal='4' />
+            <column datatype='string' name='Nom station' ordinal='5' />
+            <column datatype='real' name='Code INSEE commune' ordinal='6' />
+            <column datatype='string' name='Type implantation' ordinal='7' />
+            <column datatype='integer' name='Nombre point de recharge' ordinal='8' />
+            <column datatype='date' name='Date mise à jour' ordinal='9' />
+            <column datatype='string' name='Conditions d&apos;accès' ordinal='10' />
+            <column datatype='string' name='Adresse station' ordinal='11' />
+            <column datatype='boolean' name='Gratuité' ordinal='12' />
+            <column datatype='boolean' name='Paiement à l&apos;acte' ordinal='13' />
+            <column datatype='boolean' name='Paiement CB' ordinal='14' />
+            <column datatype='boolean' name='Paiement autres' ordinal='15' />
+            <column datatype='boolean' name='Réservation' ordinal='16' />
+            <column datatype='string' name='Tarification' ordinal='17' />
+            <column datatype='date' name='Date mise en service' ordinal='18' />
+            <column datatype='string' name='Accessibilité PMR' ordinal='19' />
+            <column datatype='string' name='Restriction gabarit' ordinal='20' />
+            <column datatype='boolean' name='Stationnement 2 roues' ordinal='21' />
+            <column datatype='real' name='Puissance max KW' ordinal='22' />
+            <column datatype='boolean' name='Prise type EF' ordinal='23' />
+            <column datatype='boolean' name='Prise type 2' ordinal='24' />
+            <column datatype='boolean' name='Prise type Combo CCS' ordinal='25' />
+            <column datatype='boolean' name='Prise type Chademo' ordinal='26' />
+            <column datatype='boolean' name='Prise type Autre' ordinal='27' />
+            <column datatype='boolean' name='Prise type 3' ordinal='28' />
+            <column datatype='string' name='Horaires' ordinal='29' />
+            <column datatype='real' name='latitude' ordinal='30' />
+            <column datatype='real' name='longitude' ordinal='31' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1mmxc5d1ntedfq1dej2po17e6sn2' name='belib-points-de-recharge-clean.csv' table='[belib-points-de-recharge-clean#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='fr_FR' separator=';'>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='Statut du Point de charge' ordinal='1' />
+            <column datatype='string' name='Arrondissement' ordinal='2' />
+            <column datatype='string' name='ID Station local' ordinal='3' />
+            <column datatype='string' name='ID Station itinérance' ordinal='4' />
+            <column datatype='string' name='Nom station' ordinal='5' />
+            <column datatype='real' name='Code INSEE commune' ordinal='6' />
+            <column datatype='string' name='Type implantation' ordinal='7' />
+            <column datatype='integer' name='Nombre point de recharge' ordinal='8' />
+            <column datatype='date' name='Date mise à jour' ordinal='9' />
+            <column datatype='string' name='Conditions d&apos;accès' ordinal='10' />
+            <column datatype='string' name='Adresse station' ordinal='11' />
+            <column datatype='boolean' name='Gratuité' ordinal='12' />
+            <column datatype='boolean' name='Paiement à l&apos;acte' ordinal='13' />
+            <column datatype='boolean' name='Paiement CB' ordinal='14' />
+            <column datatype='boolean' name='Paiement autres' ordinal='15' />
+            <column datatype='boolean' name='Réservation' ordinal='16' />
+            <column datatype='string' name='Tarification' ordinal='17' />
+            <column datatype='date' name='Date mise en service' ordinal='18' />
+            <column datatype='string' name='Accessibilité PMR' ordinal='19' />
+            <column datatype='string' name='Restriction gabarit' ordinal='20' />
+            <column datatype='boolean' name='Stationnement 2 roues' ordinal='21' />
+            <column datatype='real' name='Puissance max KW' ordinal='22' />
+            <column datatype='boolean' name='Prise type EF' ordinal='23' />
+            <column datatype='boolean' name='Prise type 2' ordinal='24' />
+            <column datatype='boolean' name='Prise type Combo CCS' ordinal='25' />
+            <column datatype='boolean' name='Prise type Chademo' ordinal='26' />
+            <column datatype='boolean' name='Prise type Autre' ordinal='27' />
+            <column datatype='boolean' name='Prise type 3' ordinal='28' />
+            <column datatype='string' name='Horaires' ordinal='29' />
+            <column datatype='real' name='latitude' ordinal='30' />
+            <column datatype='real' name='longitude' ordinal='31' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[belib-points-de-recharge-clean.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;fr_FR&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;€&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;;&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;fr_FR&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot; &quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[belib-points-de-recharge-clean.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[belib-points-de-recharge-clean.csv_C326581242BB4FBAA74BE3FC4B5C0E88]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Statut du Point de charge</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Statut du Point de charge]</local-name>
+            <parent-name>[belib-points-de-recharge-clean.csv]</parent-name>
+            <remote-alias>Statut du Point de charge</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[belib-points-de-recharge-clean.csv_C326581242BB4FBAA74BE3FC4B5C0E88]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Arrondissement</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Arrondissement]</local-name>
+            <parent-name>[belib-points-de-recharge-clean.csv]</parent-name>
+            <remote-alias>Arrondissement</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[belib-points-de-recharge-clean.csv_C326581242BB4FBAA74BE3FC4B5C0E88]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ID Station local</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ID Station local]</local-name>
+            <parent-name>[belib-points-de-recharge-clean.csv]</parent-name>
+            <remote-alias>ID Station local</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[belib-points-de-recharge-clean.csv_C326581242BB4FBAA74BE3FC4B5C0E88]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ID Station itinérance</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ID Station itinérance]</local-name>
+            <parent-name>[belib-points-de-recharge-clean.csv]</parent-name>
+            <remote-alias>ID Station itinérance</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[belib-points-de-recharge-clean.csv_C326581242BB4FBAA74BE3FC4B5C0E88]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Nom station</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Nom station]</local-name>
+            <parent-name>[belib-points-de-recharge-clean.csv]</parent-name>
+            <remote-alias>Nom station</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[belib-points-de-recharge-clean.csv_C326581242BB4FBAA74BE3FC4B5C0E88]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Code INSEE commune</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Code INSEE commune]</local-name>
+            <parent-name>[belib-points-de-recharge-clean.csv]</parent-name>
+            <remote-alias>Code INSEE commune</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[belib-points-de-recharge-clean.csv_C326581242BB4FBAA74BE3FC4B5C0E88]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Type implantation</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Type implantation]</local-name>
+            <parent-name>[belib-points-de-recharge-clean.csv]</parent-name>
+            <remote-alias>Type implantation</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[belib-points-de-recharge-clean.csv_C326581242BB4FBAA74BE3FC4B5C0E88]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Nombre point de recharge</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Nombre point de recharge]</local-name>
+            <parent-name>[belib-points-de-recharge-clean.csv]</parent-name>
+            <remote-alias>Nombre point de recharge</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[belib-points-de-recharge-clean.csv_C326581242BB4FBAA74BE3FC4B5C0E88]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date mise à jour</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Date mise à jour]</local-name>
+            <parent-name>[belib-points-de-recharge-clean.csv]</parent-name>
+            <remote-alias>Date mise à jour</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[belib-points-de-recharge-clean.csv_C326581242BB4FBAA74BE3FC4B5C0E88]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Conditions d&apos;accès</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Conditions d&apos;accès]</local-name>
+            <parent-name>[belib-points-de-recharge-clean.csv]</parent-name>
+            <remote-alias>Conditions d&apos;accès</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[belib-points-de-recharge-clean.csv_C326581242BB4FBAA74BE3FC4B5C0E88]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Adresse station</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Adresse station]</local-name>
+            <parent-name>[belib-points-de-recharge-clean.csv]</parent-name>
+            <remote-alias>Adresse station</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[belib-points-de-recharge-clean.csv_C326581242BB4FBAA74BE3FC4B5C0E88]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gratuité</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[Gratuité]</local-name>
+            <parent-name>[belib-points-de-recharge-clean.csv]</parent-name>
+            <remote-alias>Gratuité</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[belib-points-de-recharge-clean.csv_C326581242BB4FBAA74BE3FC4B5C0E88]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Paiement à l&apos;acte</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[Paiement à l&apos;acte]</local-name>
+            <parent-name>[belib-points-de-recharge-clean.csv]</parent-name>
+            <remote-alias>Paiement à l&apos;acte</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[belib-points-de-recharge-clean.csv_C326581242BB4FBAA74BE3FC4B5C0E88]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Paiement CB</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[Paiement CB]</local-name>
+            <parent-name>[belib-points-de-recharge-clean.csv]</parent-name>
+            <remote-alias>Paiement CB</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[belib-points-de-recharge-clean.csv_C326581242BB4FBAA74BE3FC4B5C0E88]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Paiement autres</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[Paiement autres]</local-name>
+            <parent-name>[belib-points-de-recharge-clean.csv]</parent-name>
+            <remote-alias>Paiement autres</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[belib-points-de-recharge-clean.csv_C326581242BB4FBAA74BE3FC4B5C0E88]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Réservation</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[Réservation]</local-name>
+            <parent-name>[belib-points-de-recharge-clean.csv]</parent-name>
+            <remote-alias>Réservation</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[belib-points-de-recharge-clean.csv_C326581242BB4FBAA74BE3FC4B5C0E88]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Tarification</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Tarification]</local-name>
+            <parent-name>[belib-points-de-recharge-clean.csv]</parent-name>
+            <remote-alias>Tarification</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[belib-points-de-recharge-clean.csv_C326581242BB4FBAA74BE3FC4B5C0E88]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date mise en service</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Date mise en service]</local-name>
+            <parent-name>[belib-points-de-recharge-clean.csv]</parent-name>
+            <remote-alias>Date mise en service</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[belib-points-de-recharge-clean.csv_C326581242BB4FBAA74BE3FC4B5C0E88]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Accessibilité PMR</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Accessibilité PMR]</local-name>
+            <parent-name>[belib-points-de-recharge-clean.csv]</parent-name>
+            <remote-alias>Accessibilité PMR</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[belib-points-de-recharge-clean.csv_C326581242BB4FBAA74BE3FC4B5C0E88]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Restriction gabarit</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Restriction gabarit]</local-name>
+            <parent-name>[belib-points-de-recharge-clean.csv]</parent-name>
+            <remote-alias>Restriction gabarit</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[belib-points-de-recharge-clean.csv_C326581242BB4FBAA74BE3FC4B5C0E88]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Stationnement 2 roues</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[Stationnement 2 roues]</local-name>
+            <parent-name>[belib-points-de-recharge-clean.csv]</parent-name>
+            <remote-alias>Stationnement 2 roues</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[belib-points-de-recharge-clean.csv_C326581242BB4FBAA74BE3FC4B5C0E88]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Puissance max KW</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Puissance max KW]</local-name>
+            <parent-name>[belib-points-de-recharge-clean.csv]</parent-name>
+            <remote-alias>Puissance max KW</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[belib-points-de-recharge-clean.csv_C326581242BB4FBAA74BE3FC4B5C0E88]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Prise type EF</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[Prise type EF]</local-name>
+            <parent-name>[belib-points-de-recharge-clean.csv]</parent-name>
+            <remote-alias>Prise type EF</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[belib-points-de-recharge-clean.csv_C326581242BB4FBAA74BE3FC4B5C0E88]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Prise type 2</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[Prise type 2]</local-name>
+            <parent-name>[belib-points-de-recharge-clean.csv]</parent-name>
+            <remote-alias>Prise type 2</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[belib-points-de-recharge-clean.csv_C326581242BB4FBAA74BE3FC4B5C0E88]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Prise type Combo CCS</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[Prise type Combo CCS]</local-name>
+            <parent-name>[belib-points-de-recharge-clean.csv]</parent-name>
+            <remote-alias>Prise type Combo CCS</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[belib-points-de-recharge-clean.csv_C326581242BB4FBAA74BE3FC4B5C0E88]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Prise type Chademo</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[Prise type Chademo]</local-name>
+            <parent-name>[belib-points-de-recharge-clean.csv]</parent-name>
+            <remote-alias>Prise type Chademo</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[belib-points-de-recharge-clean.csv_C326581242BB4FBAA74BE3FC4B5C0E88]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Prise type Autre</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[Prise type Autre]</local-name>
+            <parent-name>[belib-points-de-recharge-clean.csv]</parent-name>
+            <remote-alias>Prise type Autre</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[belib-points-de-recharge-clean.csv_C326581242BB4FBAA74BE3FC4B5C0E88]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Prise type 3</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[Prise type 3]</local-name>
+            <parent-name>[belib-points-de-recharge-clean.csv]</parent-name>
+            <remote-alias>Prise type 3</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[belib-points-de-recharge-clean.csv_C326581242BB4FBAA74BE3FC4B5C0E88]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Horaires</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Horaires]</local-name>
+            <parent-name>[belib-points-de-recharge-clean.csv]</parent-name>
+            <remote-alias>Horaires</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[belib-points-de-recharge-clean.csv_C326581242BB4FBAA74BE3FC4B5C0E88]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>latitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[latitude]</local-name>
+            <parent-name>[belib-points-de-recharge-clean.csv]</parent-name>
+            <remote-alias>latitude</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[belib-points-de-recharge-clean.csv_C326581242BB4FBAA74BE3FC4B5C0E88]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>longitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[longitude]</local-name>
+            <parent-name>[belib-points-de-recharge-clean.csv]</parent-name>
+            <remote-alias>longitude</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[belib-points-de-recharge-clean.csv_C326581242BB4FBAA74BE3FC4B5C0E88]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[Adresse station]' role='dimension' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='belib-points-de-recharge-clean.csv' datatype='table' name='[__tableau_internal_object_id__].[belib-points-de-recharge-clean.csv_C326581242BB4FBAA74BE3FC4B5C0E88]' role='measure' type='quantitative' />
+      <column aggregation='Avg' caption='Latitude' datatype='real' name='[latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Avg' caption='Longitude' datatype='real' name='[longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column-instance column='[Adresse station]' derivation='None' name='[none:Adresse station:nk]' pivot='key' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Adresse station:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;1 Rue d&apos;Uzès 75002 Paris&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;112 Rue Monge 75005 Paris&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;12 Boulevard Emile Augier 75016 Paris&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;142 Rue du Bac 75007 Paris&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;16 Rue Bobillot 75013 Paris&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;181 quater Avenue de Clichy 75017 Paris&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;19 Rue Leblanc 75015 Paris&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;2 Boulevard Edgar Quinet 75014 Paris&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;2 Rue Péguy 75006 Paris&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;24 Avenue Paul Doumer 75016 Paris&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;28 Avenue de la Porte de Villiers 75017 Paris&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;37 Avenue d&apos;Iéna 75016 Paris&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;4 Rue Changarnier 75012 Paris&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;44 Avenue George V 75008 Paris&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;52 Boulevard de Charonne 75020 Paris&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;6 Rue Michelet 75006 Paris&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;62 Jean-Jacques Rousseau 75001 Paris&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;73 Avenue des Ternes 75017 Paris&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;9 Boulevard des Batignolles 75008 Paris&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;91 Rue du Faubourg Saint-Denis 75010 Paris&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;1 Rue Pierre Chausson 75010 Paris&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;10 Rue jean Nicot 75007 Paris&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;105 Rue de Rennes 75006 Paris&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;126 Rue Legendre 75017 Paris&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;14 Rue de Crimée 75019 Paris&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;158 Boulevard de Charonne 75020 Paris&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;17 Rue Custine 75018 Paris&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;2 Rue Duroc 75007 Paris&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;21 Rue Miollis 75015 Paris&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;26 Place Etienne Pernet 75015 Paris&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;265 Rue de Belleville 75020 Paris&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;34 Rue Saint-Jacques 75005 Paris&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;4 Avenue Gourgaud 75017 Paris&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;41 Rue Didot 75014 Paris&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;47 Rue Didot 75014 Paris&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;5 Rue Jacques Callot 75006 Paris&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;56 Rue des Plantes 75014 Paris&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;66 Rue Henri Barbusse 75014 Paris&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;79 Rue de Lourmel 75015 Paris&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;8 Quai du Marché Neuf 75004 Paris&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>%many-values%</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;1 Avenue Rachel 75018 Paris&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;11 Rue François de Neufchateau 75011 Paris&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;110 Boulevard Richard Lenoir 75011 Paris&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;137 Rue de la Pompe 75016 Paris&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;15 Rue Joseph Bara 75006 Paris&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;170 boulevard Pereire 75017 Paris&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;18 Rue Perrée 75003 Paris&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;2 Avenue de Taillebourg 75011 Paris&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;2 Rue Louis Murat 75008 Paris&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;22 Rue Fabert 75007 Paris&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;27 Rue des Batignolles 75017 Paris&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;36 Quai de Béthune 75004 Paris&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;4 Place Armand Carrel 75019 Paris&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;42 Rue Jean de la Fontaine 75016 Paris&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;50 Boulevard Pereire 75017 Paris&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;58 Rue Monge 75005 Paris&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;6 Avenue des Ternes 75017 Paris&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;69 Rue de Courcelles 75008 Paris&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;8 Rue Mayet 75006 Paris&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;82 Rue de Crimée 75019 Paris&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;1 Rue Fernand Labori 75018 Paris&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;118 Rue Regnault 75013 Paris&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;12 Rue Gouthière 75013 Paris&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;145 Rue Raymond Losserand 75014 Paris&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;16 Rue du Télégraphe 75020 Paris&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;2 Rue de Fleurus 75006 Paris&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;2 square Tolstoï 75016 Paris&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;20 Boulevard Émile Augier 75016 Paris&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;204 Rue Saint-Martin 75003 Paris&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;24 Rue du Château Landon 75010 Paris&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;28 Rue de Paradis 75010 Paris&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;38 Rue François 1er 75008 Paris&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;44 Rue Paul Barruel 75015 Paris&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;5 bis Rue du Capitaine Ferber 75020 Paris&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;53 Rue Baron le Roy 75012 Paris&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;63 Boulevard Richard Lenoir 75011 Paris&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;7 Rue d&apos;Alexandrie 75002 Paris&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;75 Rue de la Convention 75015 Paris&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;9 Rue Lobineau 75006 Paris&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;97 Boulevard de Port-Royal 75014 Paris&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;1 Rue Dante 75005 Paris&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;115 Avenue de Malakoff 75016 Paris&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;12 Place du Général Koënig 75017 Paris&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;143 Avenue Émile Zola 75015 Paris&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;16 Rue Claude Bernard 75005 Paris&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;188 Avenue de Choisy 75013 Paris&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;19 Rue Tronchet 75008 Paris&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;2 Rue Abel 75012 Paris&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;2 Rue Pérignon 75007 Paris&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;24 Rue de la Paix 75002 Paris&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;28 Avenue de Niel 75017 Paris&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;37 Rue la Boétie 75008 Paris&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;4 Rue de Lobau 75004 Paris&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;44 Quai Henri IV 75004 Paris&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;52 Rue Charles Hermite 75018 Paris&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;62 Rue Pierre Charron 75008 Paris&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;7 boulevard de Picpus 75012 Paris&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;73 Boulevard Diderot 75012 Paris&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;9 Boulevard Edgar Quinet 75014 Paris&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;94 Avenue de Saint-Mandé 75012 Paris&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;1 Rue Boulard 75014 Paris&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;11 Rue Gerbert 75015 Paris&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;110 Rue Ordener 75018 Paris&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;137 Rue des Pyrénées 75020 Paris&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;15 Rue Olier 75015 Paris&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;171 Rue de la Convention 75015 Paris&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;19 Rue Brémontier 75017 Paris&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;2 Avenue Matignon 75008 Paris&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;2 Rue Marie-Andrée Lagroua Weil-Halle 75013 Paris&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;23 Boulevard Delessert 75016 Paris&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;27 Rue Faidherbe 75011 Paris&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;36 Rue du Temple 75004 Paris&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;4 Place Saint-Gervais 75004 Paris&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;43 Rue de Monceau 75008 Paris&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;50 Rue Botzaris 75019 Paris&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;6 boulevard Haussmann 75009 Paris&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;60 Avenue Victor Hugo 75016 Paris&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;70 Avenue Henri Martin 75016 Paris&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;8 Rue Rémusat 75016 Paris&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;83 Rue de Courcelles 75017 Paris&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;1 Rue Manin 75019 Paris&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;10 Rue de la Fédération 75015 Paris&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;104 Rue Louis Lumière 75020 Paris&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;126 Boulevard Diderot 75012 Paris&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;14 Avenue Théophile Gauthier 75016 Paris&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;157 Boulevard Murat 75016 Paris&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;17 Place du Panthéon 75005 Paris&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;2 Rue du Charolais 75012 Paris&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;21 Rue de Chateaudun 75009 Paris&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;245 Rue de Tolbiac 75013 Paris&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;26 Avenue Duquesne 75007 Paris&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;3 Saint Roch 75001 Paris&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;33 Rue du Ranelagh 75016 Paris&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;41 Boulevard Pasteur 75015 Paris&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;47 Avenue Bosquet 75007 Paris&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;5 Rue Frédéric Loliée 75020 Paris&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;55 Rue Desnouettes 75015 Paris&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;66 Rue de Rennes 75006 Paris&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;77 Rue Nationale 75013 Paris&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;8 Avenue de la Porte de Montrouge 75014 Paris&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;1 Avenue Émile Laurent 75012 Paris&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;1 Rue Roubo 75011 Paris&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;10 Rue Villiot 75012 Paris&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;107 Quai de Valmy 75010 Paris&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;127 Rue des Pyrénées 75020 Paris&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;14 Rue Sorbier 75020 Paris&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;159 Rue Manin 75019 Paris&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;18 Avenue Emile Zola 75015 Paris&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;2 Rue Fabre d&apos;Églantine 75012 Paris&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;21 Rue Notre-Dame des Victoires 75002 Paris&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;26 Rue Claude Decaen 75012 Paris&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;304 Rue Botzaris 75019 Paris&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;35 Rue du Bac 75007 Paris&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;4 Avenue Marcel Doret 75016 Paris&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;42 Avenue de Friedland 75008 Paris&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;47 Rue Navier 75017 Paris&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;5 Rue Jules Romains 75020 Paris&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;56 Rue la Fayette 75009 Paris&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;67 Rue Dulong 75017 Paris&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;8 Rue Adolphe Mille 75019 Paris&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;80 Rue de Dantzig 75015 Paris&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;1 Rue Jules Lefèbvre 75009 Paris&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;10 Rue Castagnou 75014 Paris&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;103 Rue Caulaincourt 75018 Paris&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;125 Bis Avenue Parmentier 75011 Paris&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;13 Rue Ernest Psichari 75007 Paris&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;152 Rue de Grenelle 75007 Paris&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;17 Avenue Victoria 75001 Paris&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;2 Rue des Eaux 75016 Paris&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;21 Quai de la Tournelle 75005 Paris&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;227 Avenue Gambetta 75020 Paris&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;25 Rue de Vouillé 75015 Paris&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;3 Rue Henard 75012 Paris&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;31 Rue Beaurepaire 75010 Paris&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;40 Rue de Courcelles 75008 Paris&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;46 Avenue Reille 75014 Paris&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;5 Rue de la Chaussée d&apos;Antin 75009 Paris&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;55 boulevard de la Villette 75010 Paris&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;66 Cours de Vincennes 75012 Paris&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;7 Rue Paul Painlevé 75005 Paris&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;77 Boulevard Exelmans 75016 Paris&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;1 Rue Chanaleilles 75007 Paris&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;11 Rue Marguerite Long 75017 Paris&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;112 Avenue de Suffren 75015 Paris&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;139 Boulevard de Grenelle 75015 Paris&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;15 Rue Rocroy 75010 Paris&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;173 Avenue du Maine 75014 Paris&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;19 Rue Dalayrac 75002 Paris&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;2 bis Rue Valette 75005 Paris&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;2 Rue Neuve Saint-Pierre 75004 Paris&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;23 Quai aux Fleurs 75004 Paris&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;27 Rue Ordener 75018 Paris&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;36 Rue Etienne Marcel 75002 Paris&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;4 Quai du Marché Neuf 75001 Paris&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;43 Rue du Docteur Finlay 75015 Paris&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;51 Avenue Raymond Poincaré 75016 Paris&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;6 place du Président Mithouard 75007 Paris&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;60 Boulevard Sérurier 75019 Paris&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;72 Avenue Paul Doumer 75016 Paris&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;86 Rue Pelleport 75020 Paris&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;9 Avenue de Villars 75007 Paris&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;1 Rue Jacques Duchesne 75019 Paris&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;10 Avenue de Flandre 75019 Paris&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;119 Avenue de Flandre 75019 Paris&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;12 Rue Milton 75009 Paris&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;150 Rue des Poissonniers 75018 Paris&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;16 Rue Molitor 75016 Paris&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;2 Rue de Martignac 75007 Paris&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;20 Rue Clovis 75005 Paris&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;205 Avenue Bosquet 75007 Paris&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;24 Rue Monte Cristo 75020 Paris&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;29 Rue Cotentin 75015 Paris&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;3 Avenue Claude Régaud 75013 Paris&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;39 Rue Julien Lacroix 75020 Paris&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;44 Rue Sébastien Mercier 75015 Paris&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;5 boulevard de Bercy 75012 Paris&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;54 Boulevard Sérurier 75019 Paris&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;64 Rue du Faubourg Poissonnière 75010 Paris&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;7 Rue Danton 75006 Paris&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;76 Boulevard de la Tour-Maubourg 75007 Paris&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;98 Rue de Turenne 75003 Paris&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;1 Rue Jean Sicard 75015 Paris&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;10 Avenue de la Porte d&apos;Aubervilliers 75019 Paris&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;120 cours de Vincennes 75012 Paris&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;13 Avenue du Père Lachaise 75020 Paris&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;150 Rue du Faubourg Saint Martin 75010 Paris&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;16 Rue Sofia 75018 Paris&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;2 Rue de Rungis 75013 Paris&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;20 Rue de Sevres 75006 Paris&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;210 Rue de Courcelles 75017 Paris&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;25 Rue Constantine 75007 Paris&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;3 Avenue du General Dodds 75012 Paris&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;31 Boulevard de Clichy 75009 Paris&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;39 Rue Riquet 75019 Paris&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;45 Avenue de la Bourdonnais 75007 Paris&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;5 Place du Commerce 75015 Paris&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;54 Rue David d&apos;Angers 75019 Paris&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;65 Avenue Emile Zola 75015 Paris&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;7 Rue de Pommard 75012 Paris&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;77 Avenue de la Grande Armée 75016 Paris&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;99 Rue de la Convention 75015 Paris&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;1 Rue Jules Romains 75019 Paris&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;10 Rue de Berri 75008 Paris&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;104 Avenue Ledru Rollin 75011 Paris&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;126 Avenue Philippe Auguste 75011 Paris&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;13 Rue Malher 75004 Paris&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;155 Avenue Ledru Rollin 75011 Paris&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;17 Place de la République 75003 Paris&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;2 Rue du Buisson Saint Louis 75010 Paris&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;21 Rue Berbier du Mets 75013 Paris&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;234 Rue de Tolbiac 75013 Paris&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;25 Rue Henri Barbusse 75005 Paris&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;3 Rue Olivier de Serres 75015 Paris&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;32 Rue Broussais 75014 Paris&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;40 Rue Sorbier 75020 Paris&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;46 Rue de Rome 75008 Paris&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;5 Rue Docteur Goujon 75012 Paris&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;55 Rue d&apos;Auteuil 75016 Paris&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;66 Rue de la Jonquière 75017 Paris&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;77 Rue de l&apos;Amiral Mouchez 75013 Paris&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;8 Avenue de Choisy 75013 Paris&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;1 Rue Navier 75017 Paris&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;1 Rue Pierre Brossolette 75005 Paris&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;10 Rue du Docteur Leray 75013 Paris&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;105 bis Rue Pelleport 75020 Paris&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;126 Rue d&apos;Aubervilliers 75019 Paris&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;14 Rue Bertin Poirée 75001 Paris&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;157 Rue Jeanne D&apos;Arc 75013 Paris&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;17 Rue Caulaincourt 75018 Paris&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;2 Rue du Commandant Lamy 75011 Paris&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;21 Rue Fernand Braudel 75013 Paris&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;251 Rue de Charenton 75012 Paris&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;26 Boulevard Jourdan 75014 Paris&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;34 Avenue Jean Moulin 75014 Paris&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;4 Avenue du Maine 75015 Paris&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;41 Rue de Tolbiac 75013 Paris&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;47 Rue de Vouillé 75015 Paris&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;5 rue Frédérick Lemaître 75020 Paris&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;55 Rue Pierre Charron 75008 Paris&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;66 Rue Gay-Lussac 75005 Paris&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;78 Avenue de Suffren 75015 Paris&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;8 Boulevard Voltaire 75011 Paris&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;1 Rue de L&apos;Amiral De Coligny 75001 Paris&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;116 Rue Réaumur 75002 Paris&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;12 Rue Darmesteter 75013 Paris&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;143 boulevard Vincent Auriol 75013 Paris&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;16 Rue de Botzaris 75019 Paris&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;188 boulevard Saint -Germain 75007 Paris&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;2 Rue Antonin Mercié 75015 Paris&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;2 Rue Pétrarque 75016 Paris&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;20 Avenue Raphaël 75016 Paris&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;24 Rue de Liège 75008 Paris&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;28 Rue Championnet 75018 Paris&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;37 Rue Sainte-Croix de la Bretonnerie 75004 Paris&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;4 Rue des Croix des Petits Champs 75001 Paris&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;44 Rue des Pirogues de Bercy 75012 Paris&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;52 Rue Étienne Marcel 75002 Paris&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;62 Rue Ramey 75018 Paris&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;7 Boulevard des Capucines 75002 Paris&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;73 Rue de Rome 75008 Paris&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;9 Place du Colonel Fabien 75010 Paris&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;94 Rue Saint-Maur 75011 Paris&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;1 Rue Croulebarbe 75013 Paris&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;112 Avenue de Versailles 75016 Paris&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;12 Boulevard de Courcelles 75017 Paris&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;142 Rue de Bagnolet 75020 Paris&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;16 Place des États-Unis 75016 Paris&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;180 Avenue Victor Hugo 75016 Paris&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;19 Rue du Chateaubriand 75008 Paris&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;2 Boulevard de Clichy 75018 Paris&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;2 Rue Paul Escudier 75012 Paris&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;23 Rue du Départ 75014 Paris&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;28 Avenue Carnot 75017 Paris&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;36 Rue Saint-Maur 75011 Paris&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;4 Rue Beaugrenelle 75015 Paris&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;43 Rue Vivienne 75002 Paris&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;52 Boulevard Arago 75013 Paris&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;6 Rue de Metz 75010 Paris&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;61 Avenue de Flandre 75019 Paris&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;72 Rue de Rome 75008 Paris&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;87 Boulevard Beaumarchais 75003 Paris&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;9 Boulevard Bourdon 75004 Paris&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;1 Avenue Georges Mandel 75016 Paris&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;108 Rue Balard 75015 Paris&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;11 Avenue Richerand 75010 Paris&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;131 Rue de Chevaleret 75013 Paris&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;15 Boulevard Mortier 75020 Paris&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;162 Rue Championnet 75018 Paris&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;18 Avenue Victor Hugo 75016 Paris&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;1bis Rue Ravignan 75018 Paris&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;2 Rue Georges Berger 75017 Paris&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;21 Rue Theophraste Renaudot 75015 Paris&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;26 Rue Léon Frot 75011 Paris&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;356 Rue des Pyrénées 75020 Paris&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;36 Avenue des Ternes 75017 Paris&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;4 Avenue Parmentier 75011 Paris&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;42 bis Avenue Georges Mandel 75016 Paris&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;48 Rue Henri Huchard 75018 Paris&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;5 Rue Réaumur 75003 Paris&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;56 Rue Lacordaire 75015 Paris&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;67 Rue Mademoiselle 75015 Paris&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;8 Rue Danton 75006 Paris&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;80 Rue François Miron 75004 Paris&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;1 Rue Jean-François Lépine 75018 Paris&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;10 Avenue de Saxe 75007 Paris&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;101 Avenue Henri Martin 75016 Paris&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;120 Rue Ordener 75018 Paris&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;13 Rue du conservatoire 75009 Paris&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;150 Rue Marcadet 75018 Paris&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;16/18 Avenue du Maine 75015 Paris&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;2 Rue des Couronnes 75020 Paris&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;21 Boulevard des Invalides 75007 Paris&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;220 Rue Marcadet 75018 Paris&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;25 Rue de la Plaine 75020 Paris&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;3 Rue de Bérite 75006 Paris&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;31 boulevard Rochechouart 75009 Paris&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;40 Avenue de la Grande Armée 75017 Paris&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;45 Avenue Victor Hugo 75016 Paris&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;5 Rue de Bellechasse 75007 Paris&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;55 Avenue de Ségur 75007 Paris&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;65 Avenue Philippe Auguste 75011 Paris&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;7 Rue Francois 1er 75008 Paris&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;77 Avenue de Wagram 75017 Paris&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;1 Rue du Colonel Pierre Avia 75015 Paris&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;117 Rue de Lagny 75020 Paris&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;12 Rue des Pyramides 75001 Paris&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;145 Rue de Tolbiac 75013 Paris&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;16 Rue de l&apos;Arrivée 75015 Paris&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;192 Rue de la Croix Nivert 75015 Paris&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;2 Rue Chardon Lagache 75016 Paris&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;2 Rue Sibour 75010 Paris&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;20 Boulevard de la Bastille 75012 Paris&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;24 Rue des Frigos 75013 Paris&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;28 Rue d&apos;Aumale 75009 Paris&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;38 Rue du Four 75006 Paris&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;44 Rue Étienne Marcel 75002 Paris&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;5 Avenue de la République 75011 Paris&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;53 Avenue de Versailles 75016 Paris&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;63 Avenue d&apos;Iéna 75016 Paris&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;7 boulevard Malesherbes 75008 Paris&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;74 Rue Vasco de Gama 75015 Paris&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;9 Rue Adolphe Mille 75019 Paris&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;95 Rue des Morillons 75015 Paris&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;1 Avenue Marceau 75016 Paris&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;109 Avenue Félix Faure 75015 Paris&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;11 Rue de Medicis 75006 Paris&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;137 Boulevard Vincent-Auriol 75013 Paris&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;15 Boulevard Murat 75016 Paris&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;162 Rue de la Roquette 75011 Paris&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;18 Rue Linnée 75005 Paris&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;2 Avenue de la Porte de Villiers 75017 Paris&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;2 Rue Houdart de Lamotte 75015 Paris&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;22 Place Charles Fillion 75017 Paris&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;27 Boulevard du Temple 75011 Paris&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;36 Boulevard Richard Lenoir 75011 Paris&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;4 Avenue Secrétan 75019 Paris&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;42 Rue Brunel 75017 Paris&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;495 Rue Monge 75005 Paris&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;50 Avenue du Docteur Arnold Netter 75012 Paris&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;58 Avenue D&apos;Ivry 75013 Paris&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;6 Avenue de la Porte Pouchet 75017 Paris&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;68 Avenue Mozart 75016 Paris&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;8 Rue de Crimée 75019 Paris&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;81 Rue de Rome 75017 Paris&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;FR&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='belib-points-de-recharge-clean.csv' id='belib-points-de-recharge-clean.csv_C326581242BB4FBAA74BE3FC4B5C0E88'>
+            <properties context=''>
+              <relation connection='textscan.1mmxc5d1ntedfq1dej2po17e6sn2' name='belib-points-de-recharge-clean.csv' table='[belib-points-de-recharge-clean#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='fr_FR' separator=';'>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='string' name='Statut du Point de charge' ordinal='1' />
+                  <column datatype='string' name='Arrondissement' ordinal='2' />
+                  <column datatype='string' name='ID Station local' ordinal='3' />
+                  <column datatype='string' name='ID Station itinérance' ordinal='4' />
+                  <column datatype='string' name='Nom station' ordinal='5' />
+                  <column datatype='real' name='Code INSEE commune' ordinal='6' />
+                  <column datatype='string' name='Type implantation' ordinal='7' />
+                  <column datatype='integer' name='Nombre point de recharge' ordinal='8' />
+                  <column datatype='date' name='Date mise à jour' ordinal='9' />
+                  <column datatype='string' name='Conditions d&apos;accès' ordinal='10' />
+                  <column datatype='string' name='Adresse station' ordinal='11' />
+                  <column datatype='boolean' name='Gratuité' ordinal='12' />
+                  <column datatype='boolean' name='Paiement à l&apos;acte' ordinal='13' />
+                  <column datatype='boolean' name='Paiement CB' ordinal='14' />
+                  <column datatype='boolean' name='Paiement autres' ordinal='15' />
+                  <column datatype='boolean' name='Réservation' ordinal='16' />
+                  <column datatype='string' name='Tarification' ordinal='17' />
+                  <column datatype='date' name='Date mise en service' ordinal='18' />
+                  <column datatype='string' name='Accessibilité PMR' ordinal='19' />
+                  <column datatype='string' name='Restriction gabarit' ordinal='20' />
+                  <column datatype='boolean' name='Stationnement 2 roues' ordinal='21' />
+                  <column datatype='real' name='Puissance max KW' ordinal='22' />
+                  <column datatype='boolean' name='Prise type EF' ordinal='23' />
+                  <column datatype='boolean' name='Prise type 2' ordinal='24' />
+                  <column datatype='boolean' name='Prise type Combo CCS' ordinal='25' />
+                  <column datatype='boolean' name='Prise type Chademo' ordinal='26' />
+                  <column datatype='boolean' name='Prise type Autre' ordinal='27' />
+                  <column datatype='boolean' name='Prise type 3' ordinal='28' />
+                  <column datatype='string' name='Horaires' ordinal='29' />
+                  <column datatype='real' name='latitude' ordinal='30' />
+                  <column datatype='real' name='longitude' ordinal='31' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='ArrondissementsMap'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='belib-points-de-recharge-clean' name='federated.1w1o9ay0gpehpm1bzc09d0n51jr7' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1w1o9ay0gpehpm1bzc09d0n51jr7'>
+            <column datatype='string' name='[Adresse station]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Arrondissement]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Nom station]' role='dimension' type='nominal' />
+            <column-instance column='[latitude]' derivation='Avg' name='[avg:latitude:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[longitude]' derivation='Avg' name='[avg:longitude:qk]' pivot='key' type='quantitative' />
+            <column aggregation='Avg' caption='Latitude' datatype='real' name='[latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+            <column aggregation='Avg' caption='Longitude' datatype='real' name='[longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+            <column-instance column='[Adresse station]' derivation='None' name='[none:Adresse station:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Arrondissement]' derivation='None' name='[none:Arrondissement:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Nom station]' derivation='None' name='[none:Nom station:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1w1o9ay0gpehpm1bzc09d0n51jr7].[avg:longitude:qk]' field-type='quantitative' max='274426.61008249992' min='246985.99168765193' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.1w1o9ay0gpehpm1bzc09d0n51jr7].[avg:latitude:qk]' field-type='quantitative' max='6258697.7754875571' min='6242901.7002738714' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1w1o9ay0gpehpm1bzc09d0n51jr7].[none:Arrondissement:nk]' />
+              <size column='[federated.1w1o9ay0gpehpm1bzc09d0n51jr7].[none:Adresse station:nk]' />
+              <text column='[federated.1w1o9ay0gpehpm1bzc09d0n51jr7].[none:Nom station:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1w1o9ay0gpehpm1bzc09d0n51jr7].[avg:latitude:qk]</rows>
+        <cols>[federated.1w1o9ay0gpehpm1bzc09d0n51jr7].[avg:longitude:qk]</cols>
+      </table>
+      <simple-id uuid='{DD62C990-00DC-4BD7-A351-824C2447760E}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='ArrondissementsMap'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='170'>
+            <card pane-specification-id='0' param='[federated.1w1o9ay0gpehpm1bzc09d0n51jr7].[none:Adresse station:nk]' type='size' />
+            <card pane-specification-id='0' param='[federated.1w1o9ay0gpehpm1bzc09d0n51jr7].[none:Arrondissement:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1w1o9ay0gpehpm1bzc09d0n51jr7].[none:Adresse station:nk]</field>
+            <field>[federated.1w1o9ay0gpehpm1bzc09d0n51jr7].[none:Arrondissement:nk]</field>
+            <field>[federated.1w1o9ay0gpehpm1bzc09d0n51jr7].[none:Nom station:nk]</field>
+            <field>[federated.1w1o9ay0gpehpm1bzc09d0n51jr7].[none:Prise type 2:nk]</field>
+            <field>[federated.1w1o9ay0gpehpm1bzc09d0n51jr7].[yr:Date mise en service:ok]</field>
+            <field>[federated.1w1o9ay0gpehpm1bzc09d0n51jr7].[yr:Date mise en service:qk]</field>
+            <field>[federated.1w1o9ay0gpehpm1bzc09d0n51jr7].[yr:Date mise à jour:ok]</field>
+            <field>[federated.1w1o9ay0gpehpm1bzc09d0n51jr7].[yr:Date mise à jour:qk]</field>
+          </color-one-way>
+        </highlight>
+        <default-map-tool-selection tool='1' />
+      </viewpoint>
+      <simple-id uuid='{7F77DE7F-846D-4C1F-801A-BAFE2D144AB5}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='ArrondissementsMap' width='192'>
+      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
+      715O/fD9UBB27t5NOrO6H3D+zJka3t/Fsm3GN05gO06D6WFZFkeefIpHjjwWgAsdm17tH+Ur
+      fNfAqd2GXaQXakGZCsHw6BjDPfb86YXWTQCi2//DJsdxsG07xLFIKRvAbr1SEAEJ4jq+VqGW
+      V8pHNLVWFLo1R2AERct6GNRs0aZfaamWjIs3dTpo3r6FEJQKRSrlcss6S8Ui5XK5owBsnJzi
+      Z7/yS1y5eIF0JsvegwcQqwii1pp3Xn8Vzwt2TN/z+P6br7P/0KGGugpD3bLLnciJx5naup3F
+      +VmGR8aIxXvv9gD03CXckHkvnUzQIOnrN8CsH0gAzNA0y7LqSaGH22gCIUQIc8jn8ySTSVzX
+      pVKprNkmNAzuKx/f9wIYiO81JL+azx19yMYphnrLRoHg/ffe5d233sJxHI5/7nPs3rsvhDi3
+      o3Q2SzKdJt/k6yiluHDuLI8//UzbexRCsHFyko2Tk33ddyvef23dIoC29yWEYHx6E+NT0z0V
+      zkfJKFRTvxzdkbutsZsJOj97j/mZu+w9/Hh4rGduNfW3jaskYJbaYn8Uda2mbDGa3S230Zr9
+      ksmsSmmFIdJAIFprpY1Z1PxbqEUugGIhz1uvvkKxkGd5aZE3v/c9KtVK1zU4jsPxT3+2sZlv
+      Lfx6+uQHLehKgIW5Ob7+F1/l9Ze/S7XS/fzN93Dkyacajh1+7PEWTV8sFDj1/gkufnS+Y83E
+      qvXknbBWXYIVfi1THz1rYWWZK+dOM3P7ZsconxCyI2h6ZGwj2/fsbzjW8w4Q2LwRgFitsMPg
+      Vn4U45LMFJZqtUounyNdyzCuVyVXECa18EWtuzI1fI6vOs4kM3ACg/KUtWmS7d6CFKvDmPc9
+      8gij4+NcOHcWISW79+5jeWmRTHYAu2kegdaaV7/zbS5fvABAdmCgham70ZPPHmVkbIzbN28y
+      OTXFjqZscqVS4c//6A+5e/s2CMEzzz3P88dfbN0N1wAF8VyXi6dPsm3PPpLpVhSqAWQav0sp
+      FSBICwUW7s+SSmfCjHGUmhvnNpxTSmJNkbGeuTaq3Q00uN9227D2mgLLskilUmEDK601tm3j
+      um5fvke49i6MaJjZ973aYDjZFipRP6cy5SlhhCg7MMCxTx4PTaDnXnyxZzt6dHyc0fHxcL3D
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
